@@ -130,6 +130,13 @@ SELECT role, AVG(years_employed) as Average_years_employed
 FROM employees
 GROUP BY role;
 
+EXERCISE 11
+SELECT role, COUNT(*) as Number_of_artists
+FROM employees
+WHERE role = "Artist";
+
+
+
 SELECT building, SUM(years_employed) as Total_years_employed
 FROM employees
 GROUP BY building;
